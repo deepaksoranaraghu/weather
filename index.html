@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For weather icons -->
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay">
+        <h1>Weather</h1>
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div> <!-- Autocomplete suggestions -->
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="loading-spinner"></div>
+        <div class="weather-info">
+            <h2 id="city-name"></h2>
+            <div id="weather-icon"></div> <!-- Weather icon -->
+            <p id="temperature"></p>
+            <p id="weather-condition"></p>
+            <div class="details">
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+                <p id="pressure"></p>
+                <p id="visibility"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
